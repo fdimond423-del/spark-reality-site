@@ -1,0 +1,19 @@
+[2026-10-22T07:30:49.168Z] Filesystem MCP server: binary updated to latest version.
+[2026-10-22T07:30:49.176Z] CLI MCP server: binary updated to latest version.
+[2026-10-22T07:30:49.184Z] Filesystem MCP server: created allowed-dirs.json for Copilot.
+[2026-10-22T07:30:49.191Z] CLI MCP server: created cli-config.json for Copilot.
+[2026-10-22T07:30:51.716Z] Attribution v2 hooks installed (claude/cursor/kiro/copilot as enabled).
+[2026-10-22T07:30:52.707Z] Task proposals refreshed locally (1 skills).
+[2026-10-22T07:30:52.784Z] Task skill focus: 6 active, 0 ignored for this task.
+[2026-10-22T07:30:57.725Z] 
+=== Task proposals auto-apply (local workspace) ===
++6 installed, 0 enabled locally: self-learning, file-style-conventions, skill-creator, skill-usage-insights, skill-feedback-adaptation, skill-official-updater
+[2026-10-22T07:30:58.703Z] Official skills SessionStart hook installed.
+[2026-10-22T07:30:58.758Z] Cost control hook scripts refreshed across Claude, Cursor, Kiro, and Copilot paths.
+[2026-10-22T07:30:59.180Z] Propagated workspace skills to 18 other agent path(s) (cursor/kiro/copilot).
+[2026-10-22T07:30:59.202Z] Task proposals auto-applied (6 installed, 0 enabled).
+[2026-10-22T07:30:59.271Z] CLI MCP server: workspace log path refreshed (1 dir(s)).
+[2026-10-22T07:30:59.277Z] CLI loop-guard hook installed.
+[2026-10-22T07:30:59.278Z] CLI MCP server: already configured — agents can connect.
+[2026-10-22T07:30:59.289Z] Filesystem MCP server: registered for Claude Code, Cursor, Kiro.
+[2026-10-22T07:30:59.297Z] Dir cache guard hook installed.
