@@ -1,3 +1,5 @@
+import { getAssetUrl } from '../utils/assetPath';
+
 /**
  * Centralized Configuration for Spark Reality
  * Houses all business details, theme colors, project records, media paths, and copy.
@@ -70,8 +72,8 @@ export const siteConfig = {
     supportingText: 'Discover residential and commercial real estate opportunities across Ahmedabad and Gandhinagar.',
     primaryCta: 'EXPLORE PROJECTS',
     secondaryCta: 'ENQUIRE NOW',
-    videoPath: '/video/spark-hero.mp4',
-    posterPath: '/images/ahmedabad-home.jpg',
+    videoPath: getAssetUrl('video/spark-hero.mp4'),
+    posterPath: getAssetUrl('images/ahmedabad-home.jpg'),
   },
 
   brandStatement: {
@@ -94,9 +96,13 @@ export const siteConfig = {
         configuration: '3 & 4 BHK Sky Villas',
         startingPrice: '₹2.85 Cr onwards',
         description: 'Low-density, expansive residences offering seamless architectural continuity between serene interior volumes and private landscaped sky decks overlooking the Ahmedabad skyline.',
-        mainImage: '/images/ahmedabad-home.jpg',
-        galleryImages: ['/images/ahmedabad-home.jpg', '/images/residential-exterior.jpg', '/images/residential-interior.jpg'],
-        videoUrl: '/video/spark-hero.mp4',
+        mainImage: getAssetUrl('images/ahmedabad-home.jpg'),
+        galleryImages: [
+          getAssetUrl('images/ahmedabad-home.jpg'),
+          getAssetUrl('images/residential-exterior.jpg'),
+          getAssetUrl('images/residential-interior.jpg')
+        ],
+        videoUrl: getAssetUrl('video/spark-hero.mp4'),
         officialProjectUrl: '#enquire',
         isVerified: true
       },
@@ -109,8 +115,11 @@ export const siteConfig = {
         configuration: '1,200 - 12,000 Sq.Ft Flexible Plates',
         startingPrice: '₹1.15 Cr onwards',
         description: 'Prime corporate suites engineered for high capital efficiency, international acoustic comfort, energy-optimized double glazing, and dedicated client valet parking.',
-        mainImage: '/images/commercial-space.jpg',
-        galleryImages: ['/images/commercial-space.jpg', '/images/commercial-space_2.jpg'],
+        mainImage: getAssetUrl('images/commercial-space.jpg'),
+        galleryImages: [
+          getAssetUrl('images/commercial-space.jpg'),
+          getAssetUrl('images/commercial-space_2.jpg')
+        ],
         officialProjectUrl: '#enquire',
         isVerified: true
       }
@@ -132,9 +141,12 @@ export const siteConfig = {
         configuration: 'Executive Suites & 2/3 BHK Apartments',
         startingPrice: '₹1.65 Cr onwards',
         description: 'Future-ready properties within India’s premier operational International Financial Services Centre. Unmatched regulatory incentives, walk-to-work culture, and robust capital appreciation.',
-        mainImage: '/images/ahmedabad-home_2.jpg',
-        galleryImages: ['/images/ahmedabad-home_2.jpg', '/images/residential-exterior_2.jpg'],
-        videoUrl: '/video/spark-hero.mp4',
+        mainImage: getAssetUrl('images/ahmedabad-home_2.jpg'),
+        galleryImages: [
+          getAssetUrl('images/ahmedabad-home_2.jpg'),
+          getAssetUrl('images/residential-exterior_2.jpg')
+        ],
+        videoUrl: getAssetUrl('video/spark-hero.mp4'),
         officialProjectUrl: '#enquire',
         isVerified: true
       },
@@ -147,8 +159,11 @@ export const siteConfig = {
         configuration: '3 & 4 BHK Garden Residences',
         startingPrice: '₹1.35 Cr onwards',
         description: 'Surrounded by Gandhinagar’s protected green tree canopy, these homes offer quiet sophistication, spacious open balconies, and direct high-speed connectivity to Ahmedabad.',
-        mainImage: '/images/residential-exterior_2.jpg',
-        galleryImages: ['/images/residential-exterior_2.jpg', '/images/residential-interior_2.jpg'],
+        mainImage: getAssetUrl('images/residential-exterior_2.jpg'),
+        galleryImages: [
+          getAssetUrl('images/residential-exterior_2.jpg'),
+          getAssetUrl('images/residential-interior_2.jpg')
+        ],
         officialProjectUrl: '#enquire',
         isVerified: true
       }
@@ -161,7 +176,7 @@ export const siteConfig = {
       title: 'Monolithic Facades',
       subtitle: 'Modern Residential Architecture in Ahmedabad',
       category: 'Exteriors',
-      imageUrl: '/images/residential-exterior.jpg',
+      imageUrl: getAssetUrl('images/residential-exterior.jpg'),
       alt: 'Contemporary residential facade in Ahmedabad'
     },
     {
@@ -169,7 +184,7 @@ export const siteConfig = {
       title: 'Corporate Precision',
       subtitle: 'Commercial Corridors along SG Highway',
       category: 'Commercial',
-      imageUrl: '/images/commercial-space.jpg',
+      imageUrl: getAssetUrl('images/commercial-space.jpg'),
       alt: 'Modern corporate architecture in Ahmedabad'
     },
     {
@@ -177,7 +192,7 @@ export const siteConfig = {
       title: 'Warm Sandstone Enclaves',
       subtitle: 'Courtyards & Private Balconies',
       category: 'Courtyards',
-      imageUrl: '/images/ahmedabad-home.jpg',
+      imageUrl: getAssetUrl('images/ahmedabad-home.jpg'),
       alt: 'Sandstone residence and courtyard in Ahmedabad'
     },
     {
@@ -185,7 +200,7 @@ export const siteConfig = {
       title: 'Bespoke Interior Volumes',
       subtitle: 'Natural Light & High-Performance Materials',
       category: 'Interiors',
-      imageUrl: '/images/residential-interior.jpg',
+      imageUrl: getAssetUrl('images/residential-interior.jpg'),
       alt: 'Luxury residential interior in Ahmedabad'
     },
     {
@@ -193,7 +208,7 @@ export const siteConfig = {
       title: 'High-Rise Panoramic Views',
       subtitle: 'GIFT City & Ahmedabad Skyline',
       category: 'Skyline',
-      imageUrl: '/images/ahmedabad-home_2.jpg',
+      imageUrl: getAssetUrl('images/ahmedabad-home_2.jpg'),
       alt: 'Skyline residential view in Gujarat'
     },
     {
@@ -201,7 +216,7 @@ export const siteConfig = {
       title: 'Architectural Landscaping',
       subtitle: 'Curated Open Spaces & Water Features',
       category: 'Landscaping',
-      imageUrl: '/images/commercial-space_2.jpg',
+      imageUrl: getAssetUrl('images/commercial-space_2.jpg'),
       alt: 'Architectural landscaped plaza in Gandhinagar'
     }
   ] as GalleryItem[],

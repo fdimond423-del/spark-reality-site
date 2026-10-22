@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetUrl } from '../utils/assetPath';
 
 interface SparkLogoProps {
   variant?: 'light' | 'dark';
@@ -21,11 +22,15 @@ export const SparkLogo: React.FC<SparkLogoProps> = ({
     lg: 'h-12 sm:h-18',
   }[size];
 
+  const logoSrc = isLight
+    ? getAssetUrl('images/spark-reality-logo-darkmode.png')
+    : getAssetUrl('images/spark-reality-logo-transparent.png');
+
   return (
     <div className={`flex items-center select-none ${className}`}>
       {/* Official Spark Reality Logo - perfectly responsive on mobile */}
       <img
-        src={isLight ? '/images/spark-reality-logo-darkmode.png' : '/images/spark-reality-logo-transparent.png'}
+        src={logoSrc}
         alt="Spark Reality - Spaces for a Brighter Tomorrow"
         className={`${heightClasses} w-auto max-w-[160px] sm:max-w-none object-contain transition-transform duration-300 hover:scale-[1.02]`}
         style={{

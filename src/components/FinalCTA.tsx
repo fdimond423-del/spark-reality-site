@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { siteConfig } from '../config/siteConfig';
 import { ArrowRight } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetPath';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,7 +46,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onStartJourneyClick }) => {
       {/* Background Architectural Image with Parallax */}
       <img
         ref={bgImageRef}
-        src="/images/residential-exterior.jpg"
+        src={getAssetUrl('images/residential-exterior.jpg')}
         alt="Architectural structure in Ahmedabad"
         className="absolute inset-0 w-full h-[125%] object-cover -top-[12%] opacity-35 pointer-events-none scale-105"
         loading="lazy"
